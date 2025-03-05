@@ -3,20 +3,31 @@
     <head>
         <meta charset = "UTF-8">
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-        <title>Destiny Reynolds's Portfolio</title>
+        <title>Destiny Reynolds | Aspiring Full Stack developer</title>
         <link rel = "stylesheet" href = "styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel = 'stylesheet'>
     </head>
     <body>
+    <section id="home">
+        <div id="intro">
+            <canvas id="introCanvas"></canvas>
         <header> 
-            <h1> Destiny Reynolds</h1>
-            <nav>
+            <h1> Hello, I'm <span class="highlight">Destiny</span>. <br>I'm an aspiring full stack developer.</h1>
+            <button id="view-work-btn"><a href="#projects">View my work</button>
+        </header>
+        </div>
+    </section>
+        <nav id = "navbar">
                 <ul>
+                    <li><a href="#home"> Home</a></li>
+                    <li><a href="#about"> About</a></li>
                     <li><a href="#projects"> Projects</a></li>
-                    <li><a href="#resume"> Resume</a></li>
                     <li><a href="#contact"> Contact</a></li>
                 </ul>
-            </nav>
-            </header>
+         </nav>
+         <section id ="about">
+            <h2>About Me</h2>
+         </section>
             <section id="projects">
                 <h2>Projects</h2>
                 <div class ="project-list">
@@ -26,10 +37,6 @@
                         <p>Project 1 description</p>
                     </div>
                 </div>
-            </section>
-            <section id="resume">
-                <h2>Resume</h2>
-                <p>Download my resume <a href="resume.pdf" target="_blank">here</a>.</p>
             </section>
             <section id = "contact">
                 <h2>Contact Me</h2>
@@ -48,5 +55,6 @@
                 <p>Connect with me:</p>
                 <a href="#">Github</a> | <a href="#">LinkedIn</a>
             </footer>
+        <script src="script.js"></script>
     </body>
 </html>
